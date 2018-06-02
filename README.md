@@ -1,10 +1,10 @@
 
     
 ## Conexão:
-Necessário alterar o arquivo application.properties, localizando em <Diretório>\desafio-hotel-back-end\hotel-desafio\src\main\resources
+Necessário alterar o arquivo application.properties, localizando em <Diretório>\desafio-hotel-back-end\src\main\resources
 
 ## Execução:
-<Diretório>\desafio-hotel-back-end\hotel-desafio>mvnw spring-boot:run
+<Diretório>\desafio-hotel-back-end>mvnw spring-boot:run
 
 ## Exemplos Requisições:
 
