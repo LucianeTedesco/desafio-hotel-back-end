@@ -7,7 +7,7 @@ Necessário alterar o arquivo application.properties, localizando em <Diretório
 <Diretório>\desafio-hotel-back-end\hotel-desafio>mvnw spring-boot:run
 
 ## Exemplos Requisições:
-***
+
 1) <Cadastrar hóspedes(Retorna o Id) - POST
 
     Ex: <http://localhost:8080/hospede>
