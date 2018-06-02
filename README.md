@@ -70,7 +70,7 @@ Necessário alterar o arquivo application.properties, localizando em <Diretório
     Ex:<http://localhost:8080/checkin>
     ```java
     {	"id": "1",
-	    "hospede": {
+    	"hospede": {
     		"id" : 1
     	},
     	"dataEntrada" : "2018-06-01T15:00:00",
