@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.hotel.entity.HospedeEntity;
+import com.hotel.exception.NotFoundException;
 import com.hotel.repository.HospedeRepository;
 
 @RestController
@@ -34,7 +35,7 @@ public class HospedeController {
 
 	@RequestMapping(value = "/{hospedeId}", method = RequestMethod.GET)
 	public HospedeEntity getHospede(@PathVariable @NotNull @DecimalMin("0") Long hospedeId) {
-		return repository.findById(hospedeId).orElseThrow(() -> new RuntimeException("Hóspede não encontrado!"));
+		return repository.findById(hospedeId).orElseThrow(() -> new NotFoundException("Hóspede não encontrado!"));
 	}
 
 	@RequestMapping(value = "/{hospedeId}", method = RequestMethod.DELETE)

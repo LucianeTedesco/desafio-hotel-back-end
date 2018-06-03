@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.hotel.entity.CheckinEntity;
+import com.hotel.exception.NotFoundException;
 import com.hotel.previsao.CheckinPrevisao;
 import com.hotel.previsao.Diaria;
 import com.hotel.repository.CheckinRepository;
@@ -36,7 +37,7 @@ public class CheckinController {
 
 	@RequestMapping(value = "/{checkinId}", method = RequestMethod.GET)
 	public CheckinEntity findById(@PathVariable @NotNull @DecimalMin("0") Long checkinId) {
-		return repository.findById(checkinId).orElseThrow(() -> new RuntimeException("Checkin não encontrado!"));
+		return repository.findById(checkinId).orElseThrow(() -> new NotFoundException("Checkin não encontrado!"));
 	}
 
 	@RequestMapping(value = "/{checkinId}", method = RequestMethod.DELETE)

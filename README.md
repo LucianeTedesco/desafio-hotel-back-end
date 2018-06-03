@@ -1,10 +1,10 @@
 
     
 ## Conexão:
-Necessário alterar o arquivo application.properties, localizando em <Diretório>\desafio-hotel-back-end\hotel-desafio\src\main\resources
+Necessário informar dados de conexão do banco de dados no arquivo application.properties, localizado em <Diretório>\desafio-hotel-back-end\hotel-desafio\src\main\resources
 
 ## Execução:
-<Diretório>\desafio-hotel-back-end\hotel-desafio>mvnw spring-boot:run
+<Diretório>\desafio-hotel-back-end\hotel-desafio>mvnw spring-boot:run. A porta padrão é 8080.
 
 ## Exemplos Requisições:
 
@@ -45,7 +45,7 @@ Necessário alterar o arquivo application.properties, localizando em <Diretório
 ***
 6) Buscar hóspedes cadastrados pelo nome, documento ou telefone - GET
 
-    Ex: <http://localhost:8080/hospede/findHospede?nome=Luciane Tedesco>
+    Ex: <http://localhost:8080/hospede/findHospede?nome=Luciane>
 
     Ex: <http://localhost:8080/hospede/findHospede?documento=123456>
 
