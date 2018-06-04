@@ -8,7 +8,7 @@ Necessário informar dados de conexão do banco de dados no arquivo application.
 
 ## Exemplos Requisições:
 
-1) <Cadastrar hóspedes(Retorna o Id) - POST
+1) Cadastrar hóspedes(Retorna o Id) - POST
 
     Ex: <http://localhost:8080/hospede>
     ```java
@@ -91,10 +91,12 @@ Necessário informar dados de conexão do banco de dados no arquivo application.
 
     Ex: <http://localhost:8080/checkin/{checkinId}>
 ***
-12) Consultar hóspedes que já realizaram o check in e não estão mais no hotel - GET
-
-    Ex: <http://localhost:8080/checkin/findAllInHotel>
-***
-13) Consultar hóspedes que ainda estão no hotel - GET
+12) Consultar hóspedes que já realizaram o checkin e não estão mais no hotel - GET
 
     Ex: <http://localhost:8080/checkin/findAllOutHotel>
+    
+***
+13) Consultar hóspedes que ainda estão no hotel - GET
+    
+    Ex: <http://localhost:8080/checkin/findAllInHotel>
+    
